@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmeed - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: #f0f2f5;
+        }
+        .navbar {
+            background: #1877f2;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+        .navbar input {
+            padding: 8px;
+            border: none;
+            border-radius: 20px;
+            width: 250px;
+        }
+        .container {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+        }
+        .sidebar, .friends {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: 250px;
+        }
+        .feed {
+            flex-grow: 1;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .post {
+            background: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Ahmeed</h1>
+        <input type="text" placeholder="Search...">
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <h3>Menu</h3>
+            <ul>
+                <li>Profile</li>
+                <li>Messages</li>
+                <li>Notifications</li>
+                <li>Settings</li>
+            </ul>
+        </div>
+        <div class="feed">
+            <h2>News Feed</h2>
+            <div class="post">
+                <h4>Ahmeed</h4>
+                <p>Welcome to my new social media platform!</p>
+            </div>
+        </div>
+        <div class="friends">
+            <h3>Friends</h3>
+            <ul>
+                <li>Friend 1</li>
+                <li>Friend 2</li>
+                <li>Friend 3</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

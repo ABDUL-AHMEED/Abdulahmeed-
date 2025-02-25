@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmeed Login Page</title>
+    <link rel="stylesheet" href="Ahmeedindex.css">
+  </head>
+  <body>
+    <div class="container flex">
+      <div class="ahmeed-page flex">
+        <div class="text">
+          <h1>Ahmeed</h1>
+          <p>Connect with friends and the world</p>
+          <p>around you on Ahmeed.com.</p>
+        </div>
+        <form action="login.html" method="POST">
+          <input type="text" id="emailOrPhone" placeholder="Email or phone number" required>
+          
+          <div class="password-container">
+            <input type="password" id="password" placeholder="Password" required>
+            <input type="checkbox" id="showPassword"> Show Password
+          </div>
+          
+          <div class="link">
+            <button type="submit" class="login">Login</button>
+            <a href="forgetpass.html" class="forgot">Forgot password?</a>
+          </div>
+          <hr>
+          <div class="button">
+            <a href="file:///C:/Users/Alli/replit.doc/newahmeedsite.html">Create new account</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      const validEmail = "olayemiahmeed422@gmail.com";
+      const validPhone = "09068635373"; // Add a sample valid phone number
+      const validPassword = "Abdulahmeed8009";
+      
+      document.getElementById("showPassword").addEventListener("change", function() {
+        const passwordField = document.getElementById("password");
+        passwordField.type = this.checked ? "text" : "password";
+      });
+      
+      document.querySelector("form").addEventListener("submit", function(e) {
+        const input = document.getElementById("emailOrPhone").value.trim();
+        const password = document.getElementById("password").value;
+
+        if ((input !== validEmail && input !== validPhone) || password !== validPassword) {
+          e.preventDefault();
+          alert("Invalid email/phone or password. Please try again.");
+        }
+      });
+    </script>
+  </body>
+</html>
+

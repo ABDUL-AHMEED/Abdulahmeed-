@@ -1,0 +1,180 @@
+
+
+/* Global reset and font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* (Optional) Body styling – note that you already have an inline background on the <body> tag */
+body {
+  /* background-image is set inline in your HTML */
+}
+
+/* Utility class for Flexbox */
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+/* Container styling */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+  min-height: 100vh;
+  background: ; /* This background may be overridden by the inline style */
+}
+
+/* Main page layout */
+.ahmeed-page {
+  display: flex; /* Needed for justify-content to work */
+  justify-content: space-between;
+  max-width: 1000px;
+  width: 100%;
+}
+
+/* Text section styling */
+.text {
+  margin-bottom: 90px;
+}
+
+.text h1 {
+  color: ;
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.text p {
+  font-size: 1.75rem;
+  white-space: normal; /* Allows wrapping on smaller screens */
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1),
+              0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+form input {
+  height: 55px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  padding: 0 14px;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #f21835;
+}
+
+::placeholder {
+  color: #777;
+  font-size: 1.063rem;
+}
+
+/* Link container inside form */
+.link {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+}
+
+/* Login button styling */
+.login {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #1877f2;
+  padding: 15px 0;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.login:hover {
+  background: #0d65d9;
+}
+
+/* Forgot password link styling */
+.forgot {
+  color: #1877f2;
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+.forgot:hover {
+  text-decoration: underline;
+}
+
+/* Horizontal rule */
+hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin: 20px 0;
+}
+
+/* Button container for "Create new account" */
+.button {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* "Create new account" link styling */
+.button a {
+  padding: 15px 20px;
+  background: #42b72a;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1.063rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.button a:hover {
+  background: #3ba626;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+  .ahmeed-page {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .text {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 460px) {
+  .text h1 {
+    font-size: 3.5rem;
+  }
+  .text p {
+    font-size: 1.3rem;
+  }
+  form {
+    padding: 15px;
+  }
+}
